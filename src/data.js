@@ -109,7 +109,7 @@ module.exports = {
         type: 'metropolis',
         maxPopulation: 20,
       },
-      terrains: ['alpine', 'wonders'],
+      terrains: ['alpine', 'byRiver'],
       effects: {
         faith: 6,
         wealth: 3,
@@ -447,7 +447,7 @@ module.exports = {
       id: 17,
       name: 'Suiye',
       cityScale: {
-        type: 'city',
+        type: 'town',
         maxPopulation: 5,
       },
       terrains: ['byRiver'],
@@ -471,7 +471,7 @@ module.exports = {
       id: 18,
       name: 'Jiashimiluo',
       cityScale: {
-        type: 'city',
+        type: 'town',
         maxPopulation: 5,
       },
       terrains: ['wonders'],

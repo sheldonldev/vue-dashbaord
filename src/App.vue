@@ -1,7 +1,7 @@
 <template>
   <AppHeader />
 
-  <div class="flex w-full">
+  <div class="flex flex-col w-full">
     <router-view />
   </div>
 </template>
