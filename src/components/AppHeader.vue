@@ -21,7 +21,8 @@ export default {
     return {
       pages: [
         { title: "诸神的纷争", to: "/" },
-        { title: "数据管理", to: "/admin"}
+        { title: "数据管理", to: "/admin"},
+        { title: "说明", to: "/manual"}
       ],
     };
   },
