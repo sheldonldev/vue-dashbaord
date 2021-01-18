@@ -11,13 +11,13 @@
           <section id="city-title" class="flex flex-col w-20 text-center">
             <div class="m-auto">
               <div v-if="city.cityScale.type === 'metropolis'">
-                <i class="text-6xl text-yellow-300 fas fa-gopuram"></i>
+                <i class="text-5xl text-yellow-300 fas fa-gopuram"></i>
               </div>
               <div v-if="city.cityScale.type === 'city'">
-                <i class="text-5xl text-purple-300 fas fa-vihara"></i>
+                <i class="text-4xl text-purple-300 fas fa-vihara"></i>
               </div>
               <div v-if="city.cityScale.type === 'town'">
-                <i class="text-4xl text-red-300 fas fa-place-of-worship"></i>
+                <i class="text-3xl text-red-300 fas fa-place-of-worship"></i>
               </div>
               <div>
                 <h2>{{ city.name }}</h2>
@@ -25,41 +25,37 @@
             </div>
           </section>
 
-          <section id="city-effect" class="flex flex-col w-32 p-2 text-xl">
-            <div class="m-auto">
+          <section id="city-effect" class="flex flex-col w-20 p-2">
+            <div class="m-auto text-center">
               <div
                 v-if="city.terrains.includes('wonders')"
-                class="w-20 text-green-600"
+                class="w-20 text-xl text-green-600"
               >
                 <i class="w-6 mx-2 fas fa-mountain"></i>
-                <span><i class="fas fa-praying-hands"></i>6</span>
               </div>
               <div
                 v-if="city.terrains.includes('bySea')"
-                class="w-20 text-blue-600"
+                class="w-20 text-xl text-blue-600"
               >
                 <i class="w-6 mx-2 fas fa-water"></i>
-                <span><i class="fas fa-money-bill-wave"></i>6</span>
               </div>
               <div
                 v-if="city.terrains.includes('alpine')"
                 class="w-20 text-green-300"
               >
                 <i class="w-6 mx-2 fas fa-mountain"></i>
-                <span><i class="fas fa-praying-hands"></i>3</span>
               </div>
               <div
                 v-if="city.terrains.includes('byRiver')"
                 class="w-20 text-blue-300"
               >
                 <i class="w-6 mx-2 fas fa-water"></i>
-                <span><i class="fas fa-money-bill-wave"></i>3</span>
               </div>
             </div>
           </section>
 
           <section class="flex flex-col w-10 p-2 text-2xl text-yellow-600">
-            <div class="m-auto">
+            <div class="m-auto text-center">
               <div v-if="city.holyReligion">
                 <span v-if="city.holyReligion == 'Buddhist'">
                   <i class="fas fa-fist-raised"></i>
@@ -93,13 +89,21 @@
             </div>
           </section>
 
-          <section id="folks" class="flex flex-col w-40 text-gray-500">
+          <section id="folks" class="flex flex-col w-64 text-lg text-gray-400">
             <div class="m-auto">
               <span
                 v-for="(religious, index) in city.religiousNum"
                 :key="index"
               >
-                <span class="p-2" v-if="religious > 0">
+                <span
+                  class="p-2"
+                  v-if="religious > 0"
+                  :class="
+                    religious > city.cityScale.maxPopulation / 2
+                      ? 'text-red-700'
+                      : ''
+                  "
+                >
                   <span v-if="index == 'Buddhist'">
                     <i class="fas fa-fist-raised"></i>
                   </span>
