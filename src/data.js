@@ -1,6 +1,6 @@
 module.exports = {
 
-  cityScales: [
+  scales: [
     {
       id: 1,
       type: "metropolis",
@@ -57,7 +57,7 @@ module.exports = {
     {
       id: 1,
       name: 'Samarkand',
-      cityScale: {
+      scale: {
         type: 'metropolis',
         maxPopulation: 20,
       },
@@ -81,7 +81,7 @@ module.exports = {
     {
       id: 2,
       name: 'Quanzhou',
-      cityScale: {
+      scale: {
         type: 'metropolis',
         maxPopulation: 20,
       },
@@ -105,7 +105,7 @@ module.exports = {
     {
       id: 3,
       name: 'Lhasa',
-      cityScale: {
+      scale: {
         type: 'metropolis',
         maxPopulation: 20,
       },
@@ -129,7 +129,7 @@ module.exports = {
     {
       id: 4,
       name: 'Aksum',
-      cityScale: {
+      scale: {
         type: 'metropolis',
         maxPopulation: 20,
       },
@@ -153,7 +153,7 @@ module.exports = {
     {
       id: 5,
       name: 'OrduBaliq',
-      cityScale: {
+      scale: {
         type: 'city',
         maxPopulation: 10,
       },
@@ -182,7 +182,7 @@ module.exports = {
     {
       id: 6,
       name: 'Gaochang',
-      cityScale: {
+      scale: {
         type: 'city',
         maxPopulation: 10,
       },
@@ -206,7 +206,7 @@ module.exports = {
     {
       id: 7,
       name: 'Guangzhou',
-      cityScale: {
+      scale: {
         type: 'city',
         maxPopulation: 10,
       },
@@ -230,7 +230,7 @@ module.exports = {
     {
       id: 8,
       name: 'Yuwen',
-      cityScale: {
+      scale: {
         type: 'city',
         maxPopulation: 10,
       },
@@ -254,7 +254,7 @@ module.exports = {
     {
       id: 9,
       name: 'Hangzhou',
-      cityScale: {
+      scale: {
         type: 'city',
         maxPopulation: 10,
       },
@@ -278,7 +278,7 @@ module.exports = {
     {
       id: 10,
       name: 'Changan',
-      cityScale: {
+      scale: {
         type: 'city',
         maxPopulation: 10,
       },
@@ -302,7 +302,7 @@ module.exports = {
     {
       id: 11,
       name: 'Kabuer',
-      cityScale: {
+      scale: {
         type: 'town',
         maxPopulation: 5,
       },
@@ -326,7 +326,7 @@ module.exports = {
     {
       id: 12,
       name: 'Taiyuan',
-      cityScale: {
+      scale: {
         type: 'town',
         maxPopulation: 5,
       },
@@ -350,7 +350,7 @@ module.exports = {
     {
       id: 13,
       name: 'Wuwei',
-      cityScale: {
+      scale: {
         type: 'town',
         maxPopulation: 5,
       },
@@ -374,7 +374,7 @@ module.exports = {
     {
       id: 14,
       name: 'Dunhuang',
-      cityScale: {
+      scale: {
         type: 'town',
         maxPopulation: 5,
       },
@@ -398,7 +398,7 @@ module.exports = {
     {
       id: 15,
       name: 'Songcheng',
-      cityScale: {
+      scale: {
         type: 'town',
         maxPopulation: 5,
       },
@@ -422,7 +422,7 @@ module.exports = {
     {
       id: 16,
       name: 'Qingdao',
-      cityScale: {
+      scale: {
         type: 'town',
         maxPopulation: 5,
       },
@@ -446,7 +446,7 @@ module.exports = {
     {
       id: 17,
       name: 'Suiye',
-      cityScale: {
+      scale: {
         type: 'town',
         maxPopulation: 5,
       },
@@ -470,7 +470,7 @@ module.exports = {
     {
       id: 18,
       name: 'Jiashimiluo',
-      cityScale: {
+      scale: {
         type: 'town',
         maxPopulation: 5,
       },
@@ -494,7 +494,7 @@ module.exports = {
     {
       id: 19,
       name: 'Bieshibali',
-      cityScale: {
+      scale: {
         type: 'town',
         maxPopulation: 5,
       },
@@ -518,7 +518,7 @@ module.exports = {
     {
       id: 20,
       name: 'Qiuci',
-      cityScale: {
+      scale: {
         type: 'town',
         maxPopulation: 5,
       },

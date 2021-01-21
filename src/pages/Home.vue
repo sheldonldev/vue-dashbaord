@@ -10,13 +10,13 @@
         <div class="flex justify-center">
           <section id="city-title" class="flex flex-col w-20 text-center">
             <div class="m-auto">
-              <div v-if="city.cityScale.type === 'metropolis'">
+              <div v-if="city.scale.type === 'metropolis'">
                 <i class="text-5xl text-yellow-300 fas fa-gopuram"></i>
               </div>
-              <div v-if="city.cityScale.type === 'city'">
+              <div v-if="city.scale.type === 'city'">
                 <i class="text-4xl text-purple-300 fas fa-vihara"></i>
               </div>
-              <div v-if="city.cityScale.type === 'town'">
+              <div v-if="city.scale.type === 'town'">
                 <i class="text-3xl text-red-300 fas fa-place-of-worship"></i>
               </div>
               <div>
@@ -99,7 +99,7 @@
                   class="p-2"
                   v-if="religious > 0"
                   :class="
-                    religious > city.cityScale.maxPopulation / 2
+                    religious > city.scale.maxPopulation / 2
                       ? 'text-red-700'
                       : ''
                   "
@@ -127,6 +127,13 @@
               </span>
             </div>
           </section>
+
+          <section id="special-role" class="flex flex-col w-64 text-lg text-gray-400">
+            <div class="m-auto">
+              <span>
+              </span>
+            </div>
+          </section>
         </div>
       </li>
     </ul>
@@ -140,8 +147,6 @@ export default {
   data() {
     return {
       title: "诸神的纷争",
-      cityScales: data.cityScales,
-      terrains: data.terrains,
       cities: data.cities,
     };
   },
